@@ -1,0 +1,21 @@
+group 'com.github.shk0da.game'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+apply plugin: 'distribution'
+
+apply plugin: 'project-report'
+apply plugin: 'build-dashboard'
+
+jar {
+    baseName = 'game'
+}
+
+mainClassName = 'com.github.shk0da.game.GameLauncher'
+
+distributions {
+    main {
+        baseName = archivesBaseName
+    }
+}
